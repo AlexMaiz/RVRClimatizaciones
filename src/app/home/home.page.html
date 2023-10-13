@@ -1,20 +1,122 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-content-full-screen">
+  <ion-grid>
+    <ion-row class="rectangulo">
+      <ion-col size="1"></ion-col>
+      <ion-col class="ion-text-start"  style="color: white;" >CLIMATIZA TU ESPACIO</ion-col>
+      <ion-col class="ion-text-center" style="color: white;"><ion-icon name="call"></ion-icon>+569 00000000</ion-col>
+      <ion-col class="ion-text-end"    style="color: white;"><ion-icon name="logo-instagram"></ion-icon></ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row class="rectangulo2">
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-button fill="clear">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/WOM_logo.png" alt="" height="100px" width="100px">
+        </ion-button>
+      </ion-col>
+      <ion-col>
+          <ion-button style="color: #498B87;" fill="clear">INICIO</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu()" (mouseenter)="showMenu = true">NOSOTROS</ion-button>
+        <div *ngIf="showMenu" class="menu-desplegable" (mouseout)="closeMenu()">
+          <ion-list class="lista-sin-lineas">
+            <ion-item style="color: #498B87;" (click)="opcionSeleccionada('Opción 1')">QUIENES SOMOS?</ion-item>
+            <!-- Agrega más opciones según tus necesidades -->
+          </ion-list>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu2()" (mouseenter)="showMenu2 = true">SERVICIOS</ion-button>
+        <div *ngIf="showMenu2" class="menu-desplegable" (mouseout)="closeMenu2()">
+          <ion-list class="lista-sin-lineas">
+            <ion-item style="color: #498B87;" (click)="opcionSeleccionada2('Opción 1')">NUESTROS SERVICIOS?</ion-item>
+            <ion-item style="color: #498B87;" (click)="opcionSeleccionada2('Opción 1')">COMO TRABAJAMOS?</ion-item>
+            <!-- Agrega más opciones según tus necesidades -->
+          </ion-list>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu3()" (mouseenter)="showMenu3 = true">FAQ</ion-button>
+        <div *ngIf="showMenu3" class="menu-desplegable" (mouseout)="closeMenu3()">
+          <ion-list class="lista-sin-lineas">
+            <ion-item style="color: #498B87;" (click)="opcionSeleccionada3('Opción 1')">Opción 1</ion-item>
+            <!-- Agrega más opciones según tus necesidades -->
+          </ion-list>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" class="custom-button">
+          CONTACTANOS
+        </ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    </ion-row>
+    <ion-row class="rectangulo3">
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <h1 style="font-weight: bold; font-size: 29px;">VENTA E INSTALACION DE CALEFACCION EN TODA LA REGION METROPOLITANA</h1>
+        <h3 >Contamos con Personal capacitado y certificado</h3>
+        <ion-button class="custom-button">VER SERVICIOS</ion-button>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col class="barra-uno"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <br><br>
+    <ion-row class="rectangulo4">
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-row >
+          <ion-col class="imagen-centrada">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/WOM_logo.png" height="200px" width="200px" >
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col style="text-align: justify;">
+            <h3>
+                En Climatización,  somos una emh3resa nacional con más de 5 años de experiencia en  el área de  Climatización de Ambientes.
+                Disponemos de las mejores marcas reconocidas a nivel nacional e internacionalidad  a precios muy competitivos.
+            </h3>
+              <br>
+            <h3>
+                Ofrecemos instalación de aire acondicionado, sistemas de calefacción central, venta e instalación de ablandador
+                de agua. Además  de ser  rápido y garantizado, es realizado por profesionales certificados para que disfrutes del mejor ambiente.
+            </h3>
+              <br>
+            <h3>
+                Garantizamos todos nuestros equipos e instalaciones y disponemos de servicio técnico si ocurriera algo en el
+                funcionamiento de los mismos, nos comprometemos a dar soluciones inmediatas en tu hogar.
+            </h3>
+          </ion-col>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        </ion-row>
+        <br>
+        <ion-row>
+          <ion-col class="imagen-centrada">
+            <ion-button  class="custom-button">
+              CONTACTANOS
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col >
+        <img src="https://static.wixstatic.com/media/0b8a58_1e52c1335e554947980d0272f746c8b1~mv2.jpg/v1/fill/w_608,h_1000,al_c,q_85,enc_auto/0b8a58_1e52c1335e554947980d0272f746c8b1~mv2.jpg" height="auto" width="auto" >
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>

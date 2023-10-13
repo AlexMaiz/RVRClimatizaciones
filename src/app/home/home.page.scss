@@ -1,27 +1,102 @@
-#container {
+.ion-content-full-screen {
+  --ion-padding-start: 0; /* Elimina el relleno en el lado izquierdo */
+  --ion-padding-end: 0; /* Elimina el relleno en el lado derecho */
+  padding-left: 50px; /* Espacio a la izquierda */
+  padding-right: 50px; /* Espacio a la derecha */
+}
+
+.rectangulo {
+  width: 100%;
+  height: 35px;
+  background-color: #74BFBB;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.rectangulo2 {
+  width: 100%;
+  height: 130px;
+  background-color: #EFEEEE;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.rectangulo3 {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  background-image: url('./../../../src/assets/imagenes/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color:#005e4f; /* Color del texto */
+  font-size: 30px; /* Tamaño del texto */
   text-align: center;
+  height: 600px;
+  opacity: 0.7;
+}
 
+.rectangulo4 {
+  width: 100%;
+  height: 500px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.menu-desplegable {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  top: 40px; /* Ajusta la distancia desde el botón */
+  border: 1px solid #ccc; /* Borde opcional */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+.custom-button {
+  --background: #498B87; /* Cambia el color de fondo a rojo */
+  --color: white; /* Cambia el color del texto a blanco */
+  --box-shadow: none; /* Quítale la sombra al botón */
+  /* También puedes usar las siguientes propiedades para asegurarte de que la sombra esté desactivada */
+  --ion-box-shadow: none;
+  box-shadow: none;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.lista-sin-lineas ion-item {
+  --inner-border-width: 0; /* Quítale las líneas a los elementos ion-item */
+  --border-width: 0; /* Quítale las líneas a los elementos ion-item */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.barra-uno{
+  width: 50px;
+  height: 10px;
+  background-color: #76B8B4;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+.boton-con-imagen {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f4/WOM_logo.png'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta correcta de tu imagen */
+  background-size: cover; /* Puedes ajustar esto según tus preferencias */
+  background-repeat: no-repeat;
+  text-align: center; /* Centra el texto dentro del botón */
+  color: white; /* Cambia el color del texto si es necesario */
+}
+.imagen-centrada {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 200px; /* Ajusta el ancho de la imagen al 100% del contenedor (ion-col) */
+  height: auto; /* Mantiene la relación de aspecto original */
 }
 
-#container a {
-  text-decoration: none;
+.imagen-centrada {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 200px; /* Ajusta el ancho de la imagen al 100% del contenedor (ion-col) */
+  height: auto; /* Mantiene la relación de aspecto original */
 }
