@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ export class HomePage {
   showMenu: boolean = false;
   showMenu2: boolean = false;
   showMenu3: boolean = false;
-  constructor() {}
+  constructor(private el: ElementRef) {}
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
@@ -40,5 +41,12 @@ export class HomePage {
   opcionSeleccionada3(opcion: string) {
     // Implementa la lógica para manejar la opción seleccionada
     console.log('Opción seleccionada:', opcion);
+  }
+
+  scrollToSection(sectionClass: string) {
+    const section = this.el.nativeElement.querySelector('.' + sectionClass);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
