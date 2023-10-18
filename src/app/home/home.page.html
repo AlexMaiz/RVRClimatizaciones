@@ -30,8 +30,7 @@
         <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu2()" (mouseenter)="showMenu2 = true">SERVICIOS</ion-button>
         <div *ngIf="showMenu2" class="menu-desplegable" (mouseout)="closeMenu2()">
           <ion-list class="lista-sin-lineas">
-            <ion-item style="color: #498B87;" (click)="scrollToSection('rectangulo7')">NUESTROS SERVICIOS?</ion-item>
-            <ion-item style="color: #498B87;" (click)="opcionSeleccionada2('Opción 1')">COMO TRABAJAMOS?</ion-item>
+            <ion-item style="color: #498B87;" (click)="scrollToSection('rectangulo6')">NUESTROS SERVICIOS?</ion-item>
             <!-- Agrega más opciones según tus necesidades -->
           </ion-list>
         </div>
@@ -40,7 +39,8 @@
         <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu3()" (mouseenter)="showMenu3 = true">FAQ</ion-button>
         <div *ngIf="showMenu3" class="menu-desplegable" (mouseout)="closeMenu3()">
           <ion-list class="lista-sin-lineas">
-            <ion-item style="color: #498B87;" (click)="opcionSeleccionada3('Opción 1')">Opción 1</ion-item>
+            <ion-item style="color: #498B87;" (click)="scrollToSection('rectangulo14')">CONSULTAS</ion-item>
+          
             <!-- Agrega más opciones según tus necesidades -->
           </ion-list>
         </div>
@@ -58,7 +58,7 @@
       <ion-col>
         <h1 style="font-weight: bold; font-size: 29px;">VENTA E INSTALACION DE CALEFACCION EN TODA LA REGION METROPOLITANA</h1>
         <h3 >Contamos con Personal capacitado y certificado</h3>
-        <ion-button class="custom-button">VER SERVICIOS</ion-button>
+        <ion-button class="custom-button" (click)="scrollToSection('rectangulo6')">VER SERVICIOS</ion-button>
       </ion-col>
       <ion-col size="1"></ion-col>
     </ion-row>
@@ -297,11 +297,5 @@
         </ion-card>
       </ion-row>
     </ion-grid>
-
-
-
-
-
-
   </ion-grid>
 </ion-content>
