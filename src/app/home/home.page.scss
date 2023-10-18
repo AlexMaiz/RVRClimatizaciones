@@ -211,3 +211,27 @@ p {
 .centered-p {
   text-align: center;
 }
+.menu-desplegable {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #EFEEEE;
+  border: 1px solid #EFEEEE;
+  z-index: 1;
+  color: #498B87;
+}
+
+ion-col:hover .menu-desplegable {
+  display: block;
+}
+.lista-sin-lineas ion-item {
+  height: auto ;
+  --inner-border-width: 0 ;
+  --border-width: 0 ;
+  font-size: 14px ;
+  padding: 2px 2px ;
+}
+.menu-item {
+  font-size: 12px; /* Tamaño de fuente más pequeño según tus preferencias */
+}

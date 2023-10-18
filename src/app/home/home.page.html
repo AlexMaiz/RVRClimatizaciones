@@ -15,32 +15,32 @@
         </ion-button>
       </ion-col>
       <ion-col>
-          <ion-button style="color: #498B87;" fill="clear">INICIO</ion-button>
+          <ion-button style="color: #498B87;font-size: large;" fill="clear">INICIO</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu()" (mouseenter)="showMenu = true">NOSOTROS</ion-button>
-        <div *ngIf="showMenu" class="menu-desplegable" (mouseout)="closeMenu()">
+        <ion-button style="color: #498B87; font-size: large;" fill="clear" (mouseenter)="showMenu = true" >NOSOTROS</ion-button>
+        <div *ngIf="showMenu" class="menu-desplegable">
           <ion-list class="lista-sin-lineas">
-            <ion-item style="color: #498B87;" (click)="scrollToSection('rectangulo4')">QUIENES SOMOS?</ion-item>
+            <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo4'); showMenu = false">QUIENES SOMOS?</ion-item>
+          </ion-list>
+        </div>
+      </ion-col>
+
+      <ion-col>
+        <ion-button style="color: #498B87;font-size: large;" fill="clear" (mouseenter)="showMenu2 = true">SERVICIOS</ion-button>
+        <div *ngIf="showMenu2" class="menu-desplegable">
+          <ion-list class="lista-sin-lineas">
+            <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo6'); showMenu2 = false">NUESTROS SERVICIOS?</ion-item>
             <!-- Agrega más opciones según tus necesidades -->
           </ion-list>
         </div>
       </ion-col>
       <ion-col>
-        <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu2()" (mouseenter)="showMenu2 = true">SERVICIOS</ion-button>
-        <div *ngIf="showMenu2" class="menu-desplegable" (mouseout)="closeMenu2()">
+        <ion-button style="color: #498B87;font-size: large;" fill="clear" (mouseenter)="showMenu3 = true" >FAQ</ion-button>
+        <div *ngIf="showMenu3" class="menu-desplegable" >
           <ion-list class="lista-sin-lineas">
-            <ion-item style="color: #498B87;" (click)="scrollToSection('rectangulo6')">NUESTROS SERVICIOS?</ion-item>
-            <!-- Agrega más opciones según tus necesidades -->
-          </ion-list>
-        </div>
-      </ion-col>
-      <ion-col>
-        <ion-button style="color: #498B87;" fill="clear" (click)="toggleMenu3()" (mouseenter)="showMenu3 = true">FAQ</ion-button>
-        <div *ngIf="showMenu3" class="menu-desplegable" (mouseout)="closeMenu3()">
-          <ion-list class="lista-sin-lineas">
-            <ion-item style="color: #498B87;" (click)="scrollToSection('rectangulo14')">CONSULTAS</ion-item>
-          
+            <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo14'); showMenu3 = false">CONSULTAS</ion-item>
+
             <!-- Agrega más opciones según tus necesidades -->
           </ion-list>
         </div>

@@ -21,9 +21,7 @@ export class HomePage {
   toggleMenu3() {
     this.showMenu3 = !this.showMenu3;
   }
-  closeMenu() {
-    this.showMenu = false;
-  }
+
   closeMenu2() {
     this.showMenu2 = false;
   }
