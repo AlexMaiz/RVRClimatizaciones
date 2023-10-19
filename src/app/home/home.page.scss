@@ -192,10 +192,7 @@ ion-card {
   border: none;
   box-shadow: none;
 }
-h1 {
-  text-align: center;
-  color: #498b87;
-}
+
 
 /* Estilo para el párrafo p */
 p {
@@ -234,4 +231,24 @@ ion-col:hover .menu-desplegable {
 }
 .menu-item {
   font-size: 12px; /* Tamaño de fuente más pequeño según tus preferencias */
+}
+.rectangulo15 {
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  background-image: url('./../../../src/assets/imagenes/fondo2.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #f6e440; /* Color del texto */
+  font-size: 40px; /* Tamaño del texto */
+  text-align: center;
+  height: 600px;
+  opacity: 0.7;
+  padding-bottom: 300px; /* Aumenta este valor para mover el texto hacia arriba */
+}
+
+
+.rectangulo15 h1 {
+  color: white; /* Cambia el color del texto a blanco */
 }
