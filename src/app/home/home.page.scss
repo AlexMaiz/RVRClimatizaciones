@@ -15,6 +15,11 @@
 }
 
 .rectangulo2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
   width: 100%;
   height: auto;
   background-color: #EFEEEE;
