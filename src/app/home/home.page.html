@@ -1,4 +1,4 @@
-<ion-content class="ion-content-full-screen">
+<ion-content class="ion-content-full-screen" style="background-color: white;">
   <ion-grid>
     <ion-row class="rectangulo">
       <ion-col size="1"></ion-col>
@@ -164,7 +164,7 @@
             </ion-row>
           </ion-grid>
         </ion-card>
-        
+
         <br><br>
       </ion-col>
       <ion-col size="1"></ion-col>
@@ -313,24 +313,92 @@
       <ion-row class="rectangulo15">
         <ion-col size="1"></ion-col>
         <ion-col>
-          <h3 style="color: #F6E440;font-size: 24px;font-weight: bold;">QUIERES COTIZAR?</h3>
-          <h1 style="color: white;font-size: 29px;font-weight: bold;" >OBTEN LA MEJOR SOLUCION A LA CLIMATIZACION DE AMBIENTES</h1>
+          <h3 style="color: #F6E440;font-size: 30px;font-weight: bold;">QUIERES COTIZAR?</h3>
+          <h1 style="color: white;font-size: 40px;font-weight: bold;" >OBTEN LA MEJOR SOLUCION A LA CLIMATIZACION DE AMBIENTES</h1>
           <br><br><br><br>
           <!-- Aquí es donde se coloca el rectángulo debajo del título h1 -->
           <ion-row class="rectangulo17">
-            <ion-col></ion-col>
+            <ion-col size="1"></ion-col>
+            <ion-col>
+            <ion-row>
+              <ion-col style="text-align: left;">
+                <div style="margin: 15px;">
+                  <p style="color: #74BFBB;font-weight: bold;font-size: 35px;margin: 0;">CONTACTANOS</p>
+                  <p style="color: #498B87;font-weight: bold;font-size: 50px;margin: 0;">Formulario de contacto</p>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col >
+                <ion-list style="background-color: #EFEEEE;">
+                  <ion-grid>
+                    <ion-row style="margin: 20px;">
+                      <ion-col>
+                        <ion-item>
+                          <ion-label position="floating" style="color: #498B87;">Nombre y Apellido</ion-label>
+                          <ion-input type="text" name="nombreApellido" ></ion-input>
+                        </ion-item>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row style="margin: 20px;">
+                      <ion-col>
+                        <ion-item >
+                          <ion-label style="color: #498B87;" position="floating">Email</ion-label>
+                          <ion-input type="email" name="email"></ion-input>
+                        </ion-item>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row style="margin: 20px;">
+                      <ion-col>
+                        <ion-item >
+                          <ion-label style="color: #498B87;" position="floating">Teléfono</ion-label>
+                          <ion-input type="tel" name="telefono"></ion-input>
+                        </ion-item>
+                      </ion-col>
+                    </ion-row >
+                    <ion-row style="margin: 20px;">
+                      <ion-col>
+                        <ion-item >
+                          <ion-label style="color: #498B87;" position="floating">Asunto</ion-label>
+                          <ion-input type="text" name="asunto"></ion-input>
+                        </ion-item>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+                </ion-list>
+              </ion-col>
+              <ion-col >
+                <ion-list style="background-color: #EFEEEE;">
+                  <ion-grid>
+                    <ion-row style="margin: 20px;">
+                      <ion-col>
+                        <ion-item >
+                          <ion-label style="color: #498B87;" position="floating">Mensaje</ion-label>
+                            <ion-textarea name="mensaje" style="min-height: 207px;min-width: 100%;"></ion-textarea>
+                          </ion-item>
+                      </ion-col>
+                    </ion-row>
+                </ion-grid>
+                </ion-list>
+                <ion-button   (click)="enviarFormulario()" expand="full" class="custom-button" >Enviar</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col size="1"></ion-col>
           </ion-row>
-
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </ion-col>
         <ion-col size="1"></ion-col>
       </ion-row>
       <ion-row class="rectangulo16">
-
+        <ion-col size="1"></ion-col>
+        <ion-col style="text-align: left;">
+          <div style="margin: 15px;">
+            <p style="color: #74BFBB;font-weight: bold;font-size: auto;margin: 0;">CONTACTANOS</p>
+            <p style="color: #498B87;font-weight: bold;font-size: auto;margin: 0;">Formulario de contacto</p>
+          </div>
+        </ion-col>
+        <ion-col size="1"></ion-col>
       </ion-row>
-
-
-
-
     </ion-grid>
 </ion-content>

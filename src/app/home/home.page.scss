@@ -241,29 +241,29 @@ ion-col:hover .menu-desplegable {
   height: 600px;
   width: 100%;
   align-items: center;
+  text-align: center;
 
 }
 
 .rectangulo16 {
-  width: 100%;
-  height: 600px;
-  background-color: #EFEEEE;
   display: flex;
-  position: absolute;
-  top: auto;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  background-color: #EFEEEE;  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 600px;
+  width: 100%;
 
-  z-index: 1; /* Esto coloca el rectángulo16 debajo del rectángulo17 */
 }
 
 .rectangulo17 {
   width: 50%;
-  height: 700px;
+  height: 550px;
   background-color: #EFEEEE;
   display: flex;
-  align-items: center; /* Centra verticalmente el contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
   position: absolute;
   right: 0;
   z-index: 2; /* Esto coloca el rectángulo17 sobre el rectángulo16 */
+
 }
 

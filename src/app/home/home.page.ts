@@ -1,5 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
-
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +10,17 @@ export class HomePage {
   showMenu: boolean = false;
   showMenu2: boolean = false;
   showMenu3: boolean = false;
-  constructor(private el: ElementRef) {}
+  formulario!: FormGroup;
+  constructor(private el: ElementRef,
+              private formBuilder: FormBuilder) {
+                this.formulario = this.formBuilder.group({
+                  nombreApellido: '',
+                  email: '',
+                  telefono: '',
+                  asunto: '',
+                  mensaje: ''
+                });
+              }
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
@@ -46,5 +56,16 @@ export class HomePage {
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
+  }
+  enviarFormulario() {
+    // Obtén los valores de los campos del formulario
+    const valoresFormulario = this.formulario.value;
+
+    // Imprime los valores en la consola
+    console.log('Nombre y Apellido:', valoresFormulario.nombreApellido);
+    console.log('Email:', valoresFormulario.email);
+    console.log('Teléfono:', valoresFormulario.telefono);
+    console.log('Asunto:', valoresFormulario.asunto);
+    console.log('Mensaje:', valoresFormulario.mensaje);
   }
 }
