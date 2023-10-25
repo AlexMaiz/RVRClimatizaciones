@@ -272,3 +272,21 @@ ion-col:hover .menu-desplegable {
 
 }
 
+.rectangulo18 {
+  width: 100%;
+  height: 50px;
+  background-color: #EFEEEE;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+.barra-tres {
+  width: 100px;
+  height: 10px;
+  background-color: #76B8B4;
+  left: 0;
+  position: absolute;
+  /* No es necesario "position: absolute;" */
+}
+
