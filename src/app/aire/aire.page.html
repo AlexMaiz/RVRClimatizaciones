@@ -1,13 +1,144 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Aireaddadadadadadad</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Aires</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-content-full-screen" style="background-color: white;">
+  <ion-grid>
+    <ion-row class="rectangulo">
+      <ion-col size="1"></ion-col>
+        <ion-col class="ion-text-start"  style="color: white;" >CLIMATIZA TU ESPACIO</ion-col>
+        <ion-col class="ion-text-center" style="color: white;"><ion-icon name="call"></ion-icon>+569 00000000</ion-col>
+        <ion-col class="ion-text-end"    style="color: white;"><ion-icon name="logo-instagram"></ion-icon></ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row class="rectangulo2">
+      <ion-col size="1"></ion-col>
+        <ion-col>
+          <ion-button fill="clear">
+            <img src="./../../assets/imagenes/logo-sin-fondo.png" alt="" height="150px" width="200px">
+          </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button style="color: #498B87;font-size: large;" fill="clear">INICIO</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button style="color: #498B87; font-size: large;" fill="clear" (mouseenter)="showMenu = true"  >NOSOTROS</ion-button>
+          <div *ngIf="showMenu" class="menu-desplegable">
+            <ion-list class="lista-sin-lineas">
+              <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo4'); showMenu = false">QUIENES SOMOS?</ion-item>
+            </ion-list>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-button style="color: #498B87;font-size: large;" fill="clear" (mouseenter)="showMenu2 = true">SERVICIOS</ion-button>
+          <div *ngIf="showMenu2" class="menu-desplegable">
+            <ion-list class="lista-sin-lineas">
+              <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo6'); showMenu2 = false">NUESTROS SERVICIOS?</ion-item>
+            </ion-list>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-button style="color: #498B87;font-size: large;" fill="clear" (mouseenter)="showMenu3 = true" >FAQ</ion-button>
+          <div *ngIf="showMenu3" class="menu-desplegable" >
+            <ion-list class="lista-sin-lineas">
+              <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo14'); showMenu3 = false">CONSULTAS</ion-item>
+            </ion-list>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="full" class="custom-button">
+            CONTACTANOS
+          </ion-button>
+        </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <br><br><br><br><br><br><br><br><br>
+    <ion-row class="rectangulo3">
+      <ion-col size="1"></ion-col>
+      <ion-col style="margin: 0;">
+        <h1 style="font-weight: bold; font-size: 29px;" class="titulo">AIRES ACONDICIONADOS INDUSTRIALES</h1>
+      </ion-col>
+      <ion-row>
+      </ion-row>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col class="barra-uno"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col style="color: #696B6D;text-align: justify;">
+        <p>
+          <br>
+          El uso de aire acondicionado a nivel industrial conlleva una serie de ventajas significativas
+          que son cruciales para mantener un entorno de trabajo óptimo en instalaciones comerciales,
+          fábricas y otros lugares de gran envergadura.
+          <br><br>
+          Estas ventajas incluyen:
+          <br><br>
+          Control de la temperatura: Un sistema de aire acondicionado industrial permite mantener una temperatura
+          constante y cómoda en el interior, lo que es esencial para la productividad de los trabajadores y la
+          calidad de los productos. Además, en ciertos procesos industriales, controlar la temperatura es crítico
+          para mantener la integridad de los productos.
+          <br><br>
+          Mejora de la calidad del aire: Los sistemas de aire acondicionado industrial están equipados con
+          filtros de alta eficiencia que eliminan partículas, polvo y contaminantes del aire, lo que resulta
+          en un ambiente más saludable y seguro para los empleados.
+          <br><br>
+          Regulación de la humedad: Estos sistemas pueden controlar la humedad relativa, lo que es esencial
+          en ciertas industrias donde la humedad puede afectar la producción o la calidad de los productos,
+          como en la fabricación de productos farmacéuticos o alimentos.
+          <br><br>
+          Aumento de la eficiencia y productividad: Un entorno de trabajo con temperaturas controladas y un
+          a buena calidad del aire puede aumentar la eficiencia y la productividad de los empleados. Los
+          trabajadores se sienten más cómodos y, por lo tanto, son más propensos a realizar sus tareas de
+          manera efectiva.
+          <br><br>
+          Conservación de equipos y maquinaria: El aire acondicionado industrial ayuda a mantener una
+          temperatura constante, lo que es esencial para la conservación de equipos sensibles al calor,
+          como servidores, maquinaria industrial y equipos de laboratorio.
+          <br><br>
+          Reducción de riesgos de seguridad: En industrias donde los procesos químicos o la maquinaria
+          pesada son comunes, mantener una temperatura y humedad controladas puede reducir el riesgo de
+          accidentes laborales.
+          <br><br>
+          Cumplimiento normativo: En ciertas industrias, el control de la temperatura y la calidad del
+          aire es esencial para cumplir con regulaciones y estándares de seguridad y calidad.
+          <br><br>
+          Mejora del bienestar de los empleados: Un ambiente de trabajo cómodo y seguro mejora la
+          satisfacción de los empleados y puede ayudar a retener y atraer talento.
+          <br><br>
+          Reducción de costos a largo plazo: A pesar de la inversión inicial, un sistema de aire
+          acondicionado industrial bien diseñado y mantenido puede resultar en ahorros a largo plazo
+          al aumentar la eficiencia energética y reducir el desgaste de los equipos.
+          <br><br>
+          En resumen, el aire acondicionado a nivel industrial aporta una serie de ventajas que van
+          más allá de la comodidad, ya que influye en la eficiencia, la seguridad y la calidad de los
+          procesos y productos en el entorno industrial. Estas ventajas hacen que sea una inversión
+          esencial en muchas industrias.
+          <br><br>
+        </p>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <img width="100%" height="860px" src="data:image/jpeg;base64,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jO9XHE2sPiRPP4Spb4/sZ3qV9Zm47a7VCYAzk2k2LTVmlZbJiCPMTcVL7SI0yTpIqX2kxmkRap6zoHmto7ZpsKk4Z5nNA6Mqk362t/BObow2sdLaAeMyGmQ8mhmg5B18PLe0s+1lbm8Z07SUTGqyNiagKEG4Fhtr+k0NScaz3Ui9tpBpk8GB5LW2J0PQ+3xnfDXVFB0tm/UyEUPt5baeydaDco/N84Gc2sj0UIa5t16zbNOVMawNqaWvqO6RpeAoykZvDofGaop19hgKbH3QOiWy7nc9Jsh2t4HeclGk2XpA7q9luP5vMGs3jOR2mCZUdS01ZpreLyKyGjP5TW8zeBhpgGZmIGwebBpygGB2DTYNOIaZvA7BpnPOOaM0DvnmrG+k5ZozQMlPA9LTIJ0v5zXNGaBreaqTNzaa5YGq/tMAaTaIADSBECBsTpNQYiBm8TEQMxMRAzExEBERATN5iIGbxeYiBm8XmIgZvF5iIGbxeYiBm8xEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERA/9k=" >
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col>
+        <ion-button  class="custom-button" expand="full">
+          VOLVER A SERVICIOS
+        </ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+    </ion-grid>
 </ion-content>
