@@ -1,18 +1,19 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef,OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-
+import { ActivatedRoute, } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit  {
   showMenu: boolean = false;
   showMenu2: boolean = false;
   showMenu3: boolean = false;
   formulario!: FormGroup;
   constructor(private el: ElementRef,
-              private formBuilder: FormBuilder) {
+              private formBuilder: FormBuilder,
+              private route: ActivatedRoute) {
                 this.formulario = this.formBuilder.group({
                   nombreApellido: '',
                   email: '',
@@ -21,7 +22,13 @@ export class HomePage {
                   mensaje: ''
                 });
               }
-
+              ngOnInit() {
+                this.route.fragment.subscribe(fragment => {
+                  if (fragment === 'servicios') {
+                    this.scrollToSection('servicios');
+                  }
+                });
+              }
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }

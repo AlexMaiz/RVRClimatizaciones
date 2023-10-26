@@ -1,18 +1,25 @@
 import { Component, ElementRef  } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-aire',
   templateUrl: './aire.page.html',
   styleUrls: ['./aire.page.scss'],
 })
-export class AirePage {
+export class AirePage implements OnInit {
   showMenu: boolean = false;
   showMenu2: boolean = false;
   showMenu3: boolean = false;
-  constructor(private el: ElementRef) {
+  constructor(private el: ElementRef,private route: ActivatedRoute) {}
 
-              }
-
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => {
+      if (fragment === 'servicios') {
+        this.scrollToSection('servicios');
+      }
+    });
+  }
   toggleMenu() {
     this.showMenu = !this.showMenu;
   }
