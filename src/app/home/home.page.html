@@ -15,13 +15,13 @@
         </ion-button>
       </ion-col>
       <ion-col>
-          <ion-button style="color: #498B87;font-size: large;" fill="clear">INICIO</ion-button>
+          <ion-button style="color: #498B87;font-size: large;" fill="clear" (click)="scrollToSection('rectangulo');">INICIO</ion-button>
       </ion-col>
       <ion-col>
         <ion-button style="color: #498B87; font-size: large;" fill="clear" (mouseenter)="showMenu = true"  >NOSOTROS</ion-button>
         <div *ngIf="showMenu" class="menu-desplegable">
           <ion-list class="lista-sin-lineas">
-            <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo4'); showMenu = false">QUIENES SOMOS?</ion-item>
+            <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo4'); showMenu = false">¿QUIENES SOMOS?</ion-item>
           </ion-list>
         </div>
       </ion-col>
@@ -30,7 +30,7 @@
         <ion-button style="color: #498B87;font-size: large;" fill="clear" (mouseenter)="showMenu2 = true">SERVICIOS</ion-button>
         <div *ngIf="showMenu2" class="menu-desplegable">
           <ion-list class="lista-sin-lineas">
-            <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo6'); showMenu2 = false">NUESTROS SERVICIOS?</ion-item>
+            <ion-item style="color: #498B87;" class="menu-item" (click)="scrollToSection('rectangulo6'); showMenu2 = false">¿NUESTROS SERVICIOS?</ion-item>
             <!-- Agrega más opciones según tus necesidades -->
           </ion-list>
         </div>
@@ -46,7 +46,7 @@
         </div>
       </ion-col>
       <ion-col>
-        <ion-button expand="full" class="custom-button">
+        <ion-button expand="full" class="custom-button" (click)="scrollToSection('rectangulo15');">
           CONTACTANOS
         </ion-button>
       </ion-col>
@@ -105,7 +105,7 @@
         <br>
         <ion-row>
           <ion-col class="imagen-centrada">
-            <ion-button  class="custom-button">
+            <ion-button  class="custom-button" (click)="scrollToSection('rectangulo15');">
               CONTACTANOS
             </ion-button>
           </ion-col>
